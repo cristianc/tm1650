@@ -1,5 +1,6 @@
 7 segment display driver for JY-MCU module based on TM1650 chip
 Copyright (c) 2015 Anatoli Arkhipenko
+2018 Alexey Voloshin <microseti@yandex.ru>
 
 Changelog:
 	v1.0.0:
@@ -13,3 +14,6 @@ Changelog:
 
 	v1.1.0:
 		2015-12-20 - Code clean up. Moved to a single header file. Added Gradual brightness method
+	
+	v1.2.0:
+		2018-09-04 - Added buttons support

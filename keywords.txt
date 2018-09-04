@@ -18,6 +18,7 @@ displayOn	KEYWORD2
 displayOff	KEYWORD2
 displayState	KEYWORD2
 displayString	KEYWORD2
+displayChar	KEYWORD2
 displayRunning	KEYWORD2
 displayRunningShift	KEYWORD2
 setBrightness	KEYWORD2
@@ -28,6 +29,7 @@ setPosition	KEYWORD2
 setDot	KEYWORD2
 getPosition	KEYWORD2
 getNumPositions	KEYWORD2
+getButtons KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

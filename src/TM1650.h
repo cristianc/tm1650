@@ -76,7 +76,7 @@ class TM1650 {
 		void	displayOff();
 		void	displayState(bool aState);
 		void	displayString(char *aString);
-		void	displayChar(byte pos, byte data, boolean dot);
+		void	displayChar(byte pos, byte data, bool dot);
 		int 	displayRunning(char *aString);
 		int 	displayRunningShift();
 		void	setBrightness(unsigned int aValue = TM1650_MAX_BRIGHT);

@@ -224,10 +224,8 @@ void TM1650::displayChar(byte aPos, byte aData, bool aDot) {
  */
 byte TM1650::getButtons(void) {
 	byte keys = 0;
-	Wire.beginTransmission(TM1650_DCTRL_BASE);
-	for (int i = 0; i < 1; i++) {
-		Wire.requestFrom(TM1650_DCTRL_BASE+i, 1);
-		keys |= Wire.read();
-	}
+	Wire.requestFrom(TM1650_DCTRL_BASE, 2);
+	keys = Wire.read();
+	Wire.read();
 	return keys;
 }

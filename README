@@ -17,3 +17,7 @@ Changelog:
 	
 	v1.2.0:
 		2018-09-04 - Added buttons support
+
+	v1.3.0:
+		2021-06-29 - Fix method getButtons and modification of example02
+

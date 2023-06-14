@@ -1,3 +1,8 @@
+# Update (by cristianc)
+
+Added new example for display boards equipped with seven (instead of three) buttons. I've successfully tested this sketch with JNFD650.DVB168C2.VER1.2 2018/01/25 display board which I've got from a DVB set-top box based on AiP650EO ic (I've also tested the other examples with a display board based on FD650B ic but buttons didn't work).
+[![display board - AiP650EO ic](/display_board.png)]
+
 7 segment display driver for JY-MCU module based on TM1650 chip
 Copyright (c) 2015 Anatoli Arkhipenko
 2018 Alexey Voloshin <microseti@yandex.ru>

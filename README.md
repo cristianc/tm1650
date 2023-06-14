@@ -1,7 +1,32 @@
 # Update (by cristianc)
 
 Added new example for display boards equipped with seven (instead of three) buttons. I've successfully tested this sketch with JNFD650.DVB168C2.VER1.2 2018/01/25 display board which I've got from a DVB set-top box based on AiP650EO ic (I've also tested the other examples with a display board based on FD650B ic but buttons didn't work).
-[![display board - AiP650EO ic](/display_board.png)]
+![display board - AiP650EO ic](/display_board.png)
+
+TM1650_example03.ino maps the seven buttons using the following hexadecimal codes:
+| Button | Label | Hex code |
+| --- | --- | --- |
+| Button1 | CH+ | 0x4F |
+| Button2 | CH- | 0x47 |
+| Button3 | MENU | 0x5F |
+| Button4 | VOL- | 0x67 |
+| Button5 | VOL+ | 0x6F |
+| Button6 | OK | 0x57 |
+| Button7 | STB | 0x77 |
+
+> **Warning**
+> Unlike what is shown into FD650 and AiP650 schematics, the SCL and SDA pins are swapped. So, if ICs have CLK on pin 2 and DAT on pin 3, the JST connector will has CLK on pin 4 and DAT on pin 5. So, don't trust the datasheets and make the connections (to an Arduino UNO, for example) as following, if you use I2C bus:
+> | JST pin # | JST pin label | Arduino pin |
+> | --- | --- | --- |
+> | 1 | VCC | 5V |
+> | 2 | IR | usually, 11 (or whatever you choose for a sketch) |
+> | 3 | GND | GND |
+> | 4 | CLK | A5 (SCL) |
+> | 5 | DAT | A4 (SDA) |
+>
+> to make display and buttons working.
+
+# README.md
 
 7 segment display driver for JY-MCU module based on TM1650 chip
 Copyright (c) 2015 Anatoli Arkhipenko
